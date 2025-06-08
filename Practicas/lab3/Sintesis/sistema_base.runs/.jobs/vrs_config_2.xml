@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="sistema_processing_system7_0_0_synth_1" LaunchDir="C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.runs/sistema_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sistema_led_ip_0_0_synth_1" LaunchDir="C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.runs/sistema_led_ip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sistema_rst_ps7_0_100M_0_synth_1" LaunchDir="C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.runs/sistema_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sistema_vio_0_0_synth_1" LaunchDir="C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.runs/sistema_vio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sistema_auto_pc_0_synth_1" LaunchDir="C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.runs/sistema_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="sistema_processing_system7_0_0_synth_1"/>
+		<Parent Id="sistema_led_ip_0_0_synth_1"/>
+		<Parent Id="sistema_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="sistema_vio_0_0_synth_1"/>
+		<Parent Id="sistema_auto_pc_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="sistema_processing_system7_0_0_synth_1"/>
+		<Parent Id="sistema_led_ip_0_0_synth_1"/>
+		<Parent Id="sistema_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="sistema_vio_0_0_synth_1"/>
+		<Parent Id="sistema_auto_pc_0_synth_1"/>
+	</Run>
+</Runs>
+
