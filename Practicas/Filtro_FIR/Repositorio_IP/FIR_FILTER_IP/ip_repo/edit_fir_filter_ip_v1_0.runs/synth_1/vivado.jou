@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Jun  9 16:51:07 2025
+# Process ID: 17676
+# Current directory: c:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/Filtro_FIR/Repositorio_IP/FIR_FILTER_IP/ip_repo/edit_fir_filter_ip_v1_0.runs/synth_1
+# Command line: vivado.exe -log fir_filter_ip_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_filter_ip_v1_0.tcl
+# Log file: c:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/Filtro_FIR/Repositorio_IP/FIR_FILTER_IP/ip_repo/edit_fir_filter_ip_v1_0.runs/synth_1/fir_filter_ip_v1_0.vds
+# Journal file: c:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/Filtro_FIR/Repositorio_IP/FIR_FILTER_IP/ip_repo/edit_fir_filter_ip_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fir_filter_ip_v1_0.tcl -notrace
