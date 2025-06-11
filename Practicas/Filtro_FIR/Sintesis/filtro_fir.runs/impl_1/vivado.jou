@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Jun 11 16:05:45 2025
+# Process ID: 23164
+# Current directory: C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/Filtro_FIR/Sintesis/filtro_fir.runs/impl_1
+# Command line: vivado.exe -log fir_filter_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fir_filter_wrapper.tcl -notrace
+# Log file: C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/Filtro_FIR/Sintesis/filtro_fir.runs/impl_1/fir_filter_wrapper.vdi
+# Journal file: C:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/Filtro_FIR/Sintesis/filtro_fir.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source fir_filter_wrapper.tcl -notrace
