@@ -13,7 +13,6 @@ entity FIR_Filter is
         rst_i  : in  std_logic;
         ena_i  : in  std_logic;
         data_i : in  std_logic_vector(DATA_W - 1 downto 0);
-        data_AXI_i : in  std_logic_vector(31 downto 0);
         data_o : out std_logic_vector(DATA_W - 1 downto 0)
     );
 end entity;
