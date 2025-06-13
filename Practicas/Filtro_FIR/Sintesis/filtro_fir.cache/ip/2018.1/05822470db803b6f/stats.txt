@@ -1,3 +1,0 @@
-NumberHits:4
-Timestamp: Wed Jun 11 19:03:34 UTC 2025
-VLNV: xilinx.com:user:nco_dual_sum_ip:1.0

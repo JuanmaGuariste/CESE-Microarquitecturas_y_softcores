@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/ipshared/77a6/hdl/nco_dual_ip_v1_0_S00_AXI.vhd" \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/ipshared/77a6/src/acum_fase.vhd" \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/ipshared/77a6/src/nco_dual_sum.vhd" \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/ipshared/77a6/src/sin_cos.vhd" \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/ipshared/77a6/src/sin_rom.vhd" \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/ipshared/77a6/hdl/nco_dual_ip_v1_0.vhd" \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/ip/FIR_Filter_nco_dual_ip_0_0/sim/FIR_Filter_nco_dual_ip_0_0.vhd" \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/ip/FIR_Filter_rst_ps7_0_100M_0/sim/FIR_Filter_rst_ps7_0_100M_0.vhd" \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/ip/FIR_Filter_ila_0_0/sim/FIR_Filter_ila_0_0.vhd" \
+"../../../../FIR_Filter.srcs/sources_1/bd/FIR_Filter/sim/FIR_Filter.vhd" \
+
+nosort

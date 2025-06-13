@@ -1,3 +1,0 @@
-NumberHits:4
-Timestamp: Wed Jun 11 19:03:33 UTC 2025
-VLNV: xilinx.com:ip:processing_system7:5.5
