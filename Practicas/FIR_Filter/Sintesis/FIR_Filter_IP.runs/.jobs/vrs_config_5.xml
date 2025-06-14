@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="FIR_Filter_FIR_Filter_0_0_synth_1" LaunchDir="C:/Users/Juanma/Documents/FIR_Filter/Sintesis/FIR_Filter_IP.runs/FIR_Filter_FIR_Filter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="FIR_Filter_nco_dual_ip_0_0_synth_1" LaunchDir="C:/Users/Juanma/Documents/FIR_Filter/Sintesis/FIR_Filter_IP.runs/FIR_Filter_nco_dual_ip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="FIR_Filter_ila_0_0_synth_1" LaunchDir="C:/Users/Juanma/Documents/FIR_Filter/Sintesis/FIR_Filter_IP.runs/FIR_Filter_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

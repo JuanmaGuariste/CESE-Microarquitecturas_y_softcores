@@ -1,0 +1,600 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Jun 13 17:04:21 2025
+# Process ID: 18736
+# Current directory: c:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.tmp/edit_ip_project.runs/synth_1
+# Command line: vivado.exe -log FIR_Filter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR_Filter.tcl
+# Log file: c:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.tmp/edit_ip_project.runs/synth_1/FIR_Filter.vds
+# Journal file: c:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.tmp/edit_ip_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIR_Filter.tcl -notrace
+Command: synth_design -top FIR_Filter -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19264 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 345.520 ; gain = 99.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_Filter' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:20]
+	Parameter NUM_TAPS bound to: 33 - type: integer 
+	Parameter DATA_W bound to: 12 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element acc_reg was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'FIR_Filter' (1#1) [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:20]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 400.535 ; gain = 154.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 400.535 ; gain = 154.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 400.535 ; gain = 154.965
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[31] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[32] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:63]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 412.344 ; gain = 166.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+	               12 Bit    Registers := 35    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FIR_Filter 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+	               12 Bit    Registers := 35    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'x_reg_reg[1][11:0]' into 'x_reg_reg[1][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[0][11:0]' into 'x_reg_reg[0][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[2][11:0]' into 'x_reg_reg[2][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[3][11:0]' into 'x_reg_reg[3][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[2][11:0]' into 'x_reg_reg[2][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[1][11:0]' into 'x_reg_reg[1][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[1] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[0] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[2] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[3] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[2] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[1] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[4][11:0]' into 'x_reg_reg[4][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[3][11:0]' into 'x_reg_reg[3][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[5][11:0]' into 'x_reg_reg[5][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[4][11:0]' into 'x_reg_reg[4][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[6][11:0]' into 'x_reg_reg[6][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[5][11:0]' into 'x_reg_reg[5][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[7][11:0]' into 'x_reg_reg[7][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[6][11:0]' into 'x_reg_reg[6][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[8][11:0]' into 'x_reg_reg[8][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[7][11:0]' into 'x_reg_reg[7][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[9][11:0]' into 'x_reg_reg[9][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[8][11:0]' into 'x_reg_reg[8][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[10][11:0]' into 'x_reg_reg[10][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[9][11:0]' into 'x_reg_reg[9][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[11][11:0]' into 'x_reg_reg[11][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[10][11:0]' into 'x_reg_reg[10][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[12][11:0]' into 'x_reg_reg[12][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[11][11:0]' into 'x_reg_reg[11][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[13][11:0]' into 'x_reg_reg[13][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[12][11:0]' into 'x_reg_reg[12][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[14][11:0]' into 'x_reg_reg[14][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[13][11:0]' into 'x_reg_reg[13][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[15][11:0]' into 'x_reg_reg[15][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[14][11:0]' into 'x_reg_reg[14][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[16][11:0]' into 'x_reg_reg[16][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[15][11:0]' into 'x_reg_reg[15][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[17][11:0]' into 'x_reg_reg[17][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[16][11:0]' into 'x_reg_reg[16][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[18][11:0]' into 'x_reg_reg[18][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[17][11:0]' into 'x_reg_reg[17][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[19][11:0]' into 'x_reg_reg[19][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[18][11:0]' into 'x_reg_reg[18][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[20][11:0]' into 'x_reg_reg[20][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[19][11:0]' into 'x_reg_reg[19][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[21][11:0]' into 'x_reg_reg[21][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[20][11:0]' into 'x_reg_reg[20][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[22][11:0]' into 'x_reg_reg[22][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[21][11:0]' into 'x_reg_reg[21][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[23][11:0]' into 'x_reg_reg[23][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[22][11:0]' into 'x_reg_reg[22][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[24][11:0]' into 'x_reg_reg[24][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[23][11:0]' into 'x_reg_reg[23][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[25][11:0]' into 'x_reg_reg[25][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[24][11:0]' into 'x_reg_reg[24][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[26][11:0]' into 'x_reg_reg[26][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[25][11:0]' into 'x_reg_reg[25][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[27][11:0]' into 'x_reg_reg[27][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[26][11:0]' into 'x_reg_reg[26][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[28][11:0]' into 'x_reg_reg[28][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[27][11:0]' into 'x_reg_reg[27][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[29][11:0]' into 'x_reg_reg[29][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[28][11:0]' into 'x_reg_reg[28][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[30][11:0]' into 'x_reg_reg[30][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[29][11:0]' into 'x_reg_reg[29][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+INFO: [Synth 8-4471] merging register 'x_reg_reg[30][11:0]' into 'x_reg_reg[30][11:0]' [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[4] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[5] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[6] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[7] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[8] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[9] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[10] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[11] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[12] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[13] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[14] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[15] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[16] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[17] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[18] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[19] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[20] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[21] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[22] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[23] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[24] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[25] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[26] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[27] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[28] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[29] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[30] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[29] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[28] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[27] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[26] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[25] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[24] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[23] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[22] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[21] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[20] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[19] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[18] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[17] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[16] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[15] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[14] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[13] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[12] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[11] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[10] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[9] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[8] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[7] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[6] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[5] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[4] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[3] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element x_reg_reg[30] was removed.  [c:/Users/Juanma/Documents/FIR_Filter/Repos_IP/Filtro_FIR_IP/Fuentes_VHDL/FIR_Filter_Component.vhd:51]
+DSP Report: Generating DSP ARG, operation Mode is: C+A''*(B:0x17).
+DSP Report: register x_reg_reg[25] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[26] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG6 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x21).
+DSP Report: register x_reg_reg[24] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[25] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG7 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x2b).
+DSP Report: register x_reg_reg[23] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[24] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG8 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x37).
+DSP Report: register x_reg_reg[22] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[23] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG9 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x44).
+DSP Report: register x_reg_reg[21] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[22] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG10 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x50).
+DSP Report: register x_reg_reg[20] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[21] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG11 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x5b).
+DSP Report: register x_reg_reg[19] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[20] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG12 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x65).
+DSP Report: register x_reg_reg[18] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[19] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG13 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x6c).
+DSP Report: register x_reg_reg[17] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[18] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG14 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x71).
+DSP Report: register x_reg_reg[16] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[17] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG15 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x73).
+DSP Report: register x_reg_reg[15] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[16] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG16 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x71).
+DSP Report: register x_reg_reg[14] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[15] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG17 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x6c).
+DSP Report: register x_reg_reg[13] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[14] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG18 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x65).
+DSP Report: register x_reg_reg[12] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[13] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG19 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x5b).
+DSP Report: register x_reg_reg[11] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[12] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG20 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x50).
+DSP Report: register x_reg_reg[10] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[11] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG21 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x44).
+DSP Report: register x_reg_reg[9] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[10] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG22 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x37).
+DSP Report: register x_reg_reg[8] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[9] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG23 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x2b).
+DSP Report: register x_reg_reg[7] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[8] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG24 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x21).
+DSP Report: register x_reg_reg[6] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[7] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG25 is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: PCIN+A''*(B:0x17).
+DSP Report: register x_reg_reg[5] is absorbed into DSP ARG.
+DSP Report: register x_reg_reg[6] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG26 is absorbed into DSP ARG.
+INFO: [Synth 8-3886] merging instance 'A[29]__0' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[28]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[27]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[26]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[25]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[24]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[23]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[22]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[21]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[20]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[19]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[18]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[17]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[16]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[15]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[14]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[13]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[12]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[11]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[10]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[9]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[8]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[7]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[6]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[5]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[4]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[3]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[2]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[1]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'A[0]' (FDRE) to 'B[11]__0'
+INFO: [Synth 8-3886] merging instance 'C[12]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[13]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[14]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[15]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[16]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[17]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[18]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[19]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[20]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[21]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[22]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[23]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[24]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[25]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[26]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[27]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[28]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[29]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[30]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[31]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[32]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[33]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[34]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[35]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[36]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[37]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[38]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[39]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[40]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[41]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[42]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[43]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[44]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[45]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[46]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'C[47]' (FDRE) to 'C[11]'
+INFO: [Synth 8-3886] merging instance 'A[0]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[1]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[2]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[3]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[4]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[5]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[6]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[7]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[8]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[9]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[10]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[11]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[12]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[13]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[14]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[15]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[16]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[17]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[18]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[19]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[20]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[21]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[22]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[23]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[24]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[25]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[26]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[27]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[28]__0' (FDRE) to 'B[11]'
+INFO: [Synth 8-3886] merging instance 'A[29]' (FDRE) to 'B[11]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FIR_Filter  | C+A''*(B:0x17)    | 12     | 6      | 30     | -      | 30     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x21) | 12     | 7      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x2b) | 12     | 7      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x37) | 12     | 7      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x44) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x50) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x5b) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x65) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x6c) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x71) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x73) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x71) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x6c) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x65) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x5b) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x50) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x44) | 12     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x37) | 12     | 7      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x2b) | 12     | 7      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x21) | 12     | 7      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Filter  | PCIN+A''*(B:0x17) | 12     | 6      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    94|
+|3     |DSP48E1 |    21|
+|4     |LUT1    |    21|
+|5     |LUT2    |   286|
+|6     |LUT3    |    24|
+|7     |LUT4    |    15|
+|8     |FDRE    |   432|
+|9     |IBUF    |    15|
+|10    |OBUF    |    12|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   921|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 538.289 ; gain = 292.719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 69 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 538.289 ; gain = 292.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 538.289 ; gain = 292.719
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+168 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 647.824 ; gain = 415.574
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Juanma/Documents/Juanma/CESE/MyS/Practicas/lab3/Sintesis/sistema_base.tmp/edit_ip_project.runs/synth_1/FIR_Filter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FIR_Filter_utilization_synth.rpt -pb FIR_Filter_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 647.824 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 13 17:04:38 2025...

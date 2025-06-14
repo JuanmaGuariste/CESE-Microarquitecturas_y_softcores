@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;FIR_Filter/src/NCO_controller..c&apos;" deleteContents="false" description="Delete resource &apos;FIR_Filter/src/NCO_controller..c&apos;" element1="/FIR_Filter/src/NCO_controller..c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1749846939552"/>
+</session>

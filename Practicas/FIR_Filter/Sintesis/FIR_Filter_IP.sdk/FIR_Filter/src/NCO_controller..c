@@ -1,0 +1,24 @@
+#include "xparameters.h"
+#include "xil_io.h"
+
+int main(void) {
+	#define NCO_DUAL_SUM_IP_S00_AXI_SLV_REG0_OFFSET 0
+	#define NCO_DUAL_SUM_IP_S00_AXI_SLV_REG1_OFFSET 4
+    // Variables de paso para las dos senoidales
+    int paso_low = 6;
+    int paso_high = 62;
+    xil_printf("-- Inicio del programa para configurar el NCO dual --\r\n");
+    // Se escribe el paso_low en el registro 0 del NCO
+    Xil_Out32((XPAR_NCO_DUAL_IP_0_S00_AXI_BASEADDR) + (NCO_DUAL_SUM_IP_S00_AXI_SLV_REG0_OFFSET), (u32)paso_low);
+    // Se escribe el paso_high en el registro 1 del NCO
+    Xil_Out32((XPAR_NCO_DUAL_IP_0_S00_AXI_BASEADDR) + (NCO_DUAL_SUM_IP_S00_AXI_SLV_REG1_OFFSET), (u32)paso_high);
+    xil_printf("Se configuraron los pasos:\r\n");
+    xil_printf("paso_low  = %d\r\n", paso_low);
+    xil_printf("paso_high = %d\r\n", paso_high);
+    xil_printf("-- Fin del programa --\r\n");
+    return 0;
+}
+
+
+
+
